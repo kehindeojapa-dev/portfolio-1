@@ -134,7 +134,7 @@
   }
 
   .menu-wrap .menu > div {
-    background: rgba(8, 105, 114, 0.7);
+    background: #8c9dff77;
     width: 100%;
     height: 100%;
     display: flex;
@@ -168,9 +168,10 @@
   }
 
   .menu-wrap .menu > div > div > ul > li > a {
-    color: #fff;
+    color: var(--color1);
     text-decoration: none;
     transition: all 0.3s ease;
+    font-weight: bold;
   }
   .menu-wrap .menu > div > div > ul > li > a:hover {
     color: var(--color4);

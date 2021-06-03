@@ -10,23 +10,22 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-/* Color Scheme1 */
-:root {
-  --color1: rgb(7, 26, 82);
-  --color2: rgb(8, 105, 114);
-  --color3: rgb(23, 185, 120);
-  --color4: rgb(167, 255, 131);
-}
-
-/* Color Scheme2 */
 /* :root {
-  --color1: rgb(0, 0, 0);
-  --color2: rgb(50, 50, 50);
-  --color3: rgb(255, 30, 86);
-  --color4: rgb(255, 172, 65);
+  --color1: rgb(48, 58, 82);
+  --color2: rgb(87, 75, 144);
+  --color3: rgb(158, 87, 157);
+  --color4: rgb(252, 133, 174);
 } */
+
+:root {
+  --color1: #283593;
+  --color2: #3f51b5;
+  --color3: #8c9eff;
+  --color4: #e8eaf6;
+}
 
 body {
   font-family: Poppins, sans-serif;
@@ -34,6 +33,9 @@ body {
   overflow-x: hidden;
 }
 
+.hide {
+  /* display: none; */
+}
 /*                              *\
   ==============================
     Header(Logo+Navigation)
@@ -41,31 +43,38 @@ body {
 \*                              */
 
 .smallNav img {
-  width: 150px;
-  object-fit: fill;
-  /* outline: 1px solid red; */
-  margin-top: -20px;
+  width: 100px;
+  object-fit: contain;
+  margin-top: -15px;
+  height: 66px;
 }
 
 .bigNav {
   width: 100%;
+  height: 55px;
   padding: 0 5%;
   /* outline: 1px solid red; */
   display: grid;
   grid-template-columns: 20% 80%;
   background-color: var(--color1);
   color: #fff;
+  position: fixed;
 }
 .bigNav img {
   width: 100px;
-  object-fit: fill;
+  object-fit: contain;
+  height: 55px;
 }
 .bigNav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .bigNav ul li {
   margin-top: 1em;
+  margin-right: 6em;
+}
+.bigNav ul li a:hover {
+  border-bottom: 3px solid var(--color4);
 }
 /* Responsive Handlers */
 @media (min-width: 900px) {
@@ -95,10 +104,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 624px;
+  height: 683px;
 }
 .aboutText {
-  height: 624px;
+  height: 683px;
   background-color: rgba(7, 26, 82, 0.4);
 
   text-align: center;
@@ -106,7 +115,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgba(167, 255, 131, 0.8);
+  /* color: rgba(167, 255, 131, 0.8); */
+  color: var(--color4);
+  text-shadow: 2px 3px 5px var(--color1);
 }
 
 .aboutText h1 {
@@ -172,7 +183,7 @@ body {
   padding-bottom: 4em;
 }
 .tools ul li {
-  color: cyan;
+  color: var(--color3);
   font-size: 1.2em;
 }
 
@@ -218,6 +229,16 @@ body {
   margin-bottom: 2em;
 }
 
+.seeAll {
+  color: var(--color1);
+  border-bottom: 1px solid var(--color1);
+  transition: all 0.2 ease;
+}
+.seeAll:hover {
+  color: var(--color2);
+  border-bottom: 3px solid var(--color2);
+}
+
 .projectsContainer {
   width: 80%;
   margin: auto;
@@ -228,9 +249,8 @@ body {
 }
 
 .projectCard {
-  /* background: rgb(235, 231, 231); */
-  background-color: rgb(248, 239, 223);
-  box-shadow: 2px 4px 5px var(--color2);
+  background-color: var(--color3);
+  box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.5);
   width: 90%;
   margin: auto;
   border-radius: 2em;
@@ -238,7 +258,7 @@ body {
 
 .projectCard img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
@@ -258,15 +278,14 @@ body {
 
 .projectCard .projectTools {
   display: flex;
-  justify-content: center;
-  padding: 0.5em;
+  justify-content: flex-start;
+  margin: 0.3em 0 0.5em 0.5em;
 }
 .projectTools li {
   padding: 0.1em 0.3em;
   color: var(--color3);
   font-weight: bold;
-  background-color: var(--color1);
-  background-color: rgba(7, 26, 82, 0.2);
+  background-color: black;
   margin: 0 1em;
   border-radius: 5px;
 }
@@ -280,17 +299,19 @@ body {
 .buttons button {
   padding: 0.5em 0.8em;
   margin: 0 1em;
-  background-color: var(--color2);
+  background: linear-gradient(to left, #0052d4, #4364f7);
+  box-shadow: 0px 1px 4px #0052d4;
   border: none;
   color: wheat;
   font-size: 1em;
+  font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.5s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .buttons button:hover {
-  background-color: var(--color3);
+  background: linear-gradient(to right, #0052d4, #4364f7);
 }
 
 /*
@@ -345,10 +366,9 @@ body {
 
 .blogCard {
   /* outline: 1px solid red; */
-  width: 400px;
+  width: 350px;
   margin: auto;
   background-color: rgb(248, 239, 223);
-  /* background: rgb(235, 231, 231); */
   padding: 0.7em 0.7em;
   border-radius: 15px;
   text-align: center;
@@ -388,6 +408,13 @@ body {
 */
 
 @media (min-width: 800px) {
+  .blogs header h1 {
+    font-size: 2.5em;
+  }
+  .blogs header p {
+    font-size: 1.5em;
+  }
+
   .blogsContainer {
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
@@ -403,9 +430,9 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .blogCard {
-    width: 90%;
+@media (min-width: 1100px) {
+  .blogsContainer {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -468,4 +495,24 @@ body {
 }
 .contact aside a:hover {
   border-bottom: 1px solid var(--color4);
+}
+
+.contact ul {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em;
+}
+
+.contact ul img {
+  width: 50px;
+}
+
+.contact li {
+  margin: 0 1em;
+}
+
+.contact img:hover {
+  border: 3px solid var(--color4);
+  padding: 0.2em;
+  border-radius: 50%;
 }
