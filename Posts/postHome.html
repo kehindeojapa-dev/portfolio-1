@@ -5,18 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kehinde-Ojapa" />
     <meta name="description" content="kehinde ojapa blog posts" />
+    <link rel="stylesheet" href="../Resources/hamburger.css" />
+    <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="./postStyle.css" />
+    <link
+      rel="shortcut icon"
+      href="../Resources/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Kehinde Ojapa | Blog</title>
   </head>
   <body>
     <!-- Header -->
+    <!-- Header(Navigation) -->
+    <!-- Navigation(small screens) -->
+    <nav class="mobile-nav smallNav">
+      <a href="../index.html"
+        ><img src="../Resources/images/favicon.ico" alt="Kehinde Ojapa"
+      /></a>
 
-    <!-- Title -->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="../index.html#aboutText">HOME</a></li>
+                <li><a href="../index.html#aboutMe">ABOUT</a></li>
+                <li><a href="../Projects/projectHome.html">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Short Bio -->
+    <!-- Navigation(Bigger Screen) -->
+    <header class="bigNav">
+      <div>
+        <a href="../index.html"
+          ><img src="../Resources/images/favicon.ico" alt="Kehinde Ojapa"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html#aboutText">Home</a></li>
+          <li><a href="../index.html#aboutMe">About</a></li>
+          <li><a href="../Projects/projectHome.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Blogs -->
+    <section class="blogs" id="blogs">
+      <header>
+        <h1>Blog</h1>
+        <p>
+          I write short articles sometimes on software development and other
+          stuff. Most of them are posted on Dev.to or Hashnode.
+        </p>
+      </header>
+      <main class="blogsContainer">
+        <article class="blogCard">
+          <img src="../Resources/images/myPic1.jpg" alt="blog picture" />
+          <h1>Blog Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis
+            odit placeat laborum eius quas ab excepturi, aperiam iste
+            praesentium!
+          </p>
+          <button>Read article</button>
+        </article>
+        <article class="blogCard">
+          <img src="../Resources/images/myPic1.jpg" alt="blog picture" />
+          <h1>Blog Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis
+            odit placeat laborum eius quas ab excepturi, aperiam iste
+            praesentium!
+          </p>
+          <button>Read article</button>
+        </article>
+        <article class="blogCard">
+          <img src="../Resources/images/myPic1.jpg" alt="blog picture" />
+          <h1>Blog Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis
+            odit placeat laborum eius quas ab excepturi, aperiam iste
+            praesentium!
+          </p>
+          <button>Read article</button>
+        </article>
+        <article class="blogCard">
+          <img src="../Resources/images/myPic1.jpg" alt="blog picture" />
+          <h1>Blog Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis
+            odit placeat laborum eius quas ab excepturi, aperiam iste
+            praesentium!
+          </p>
+          <button>Read article</button>
+        </article>
+      </main>
+    </section>
 
     <!-- Blog Card(reusable) -->
 
     <!-- Contact Form + Footer -->
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h1>Get In Touch</h1>
+      <p>
+        Currently looking for remote or in-house opportunites. Have an exciting
+        project that could use my help?, or you've got a question. Drop me a
+        line and let's chat!
+      </p>
+
+      <a class="message" href="mailto:adaeza.dev@gmail.com">
+        Shoot a Message
+      </a>
+
+      <!-- Social + Footer -->
+      <nav id="social">
+        <ul>
+          <li>
+            <a href="#" target="_"
+              ><img src="../Resources/images/linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/kehindeojapa-dev" target="_">
+              <img src="../Resources/images/github.png" alt="Github link" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_">
+              <img src="../Resources/images/twitter.png" alt="Twitter link" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <aside>
+        Designed & Built by
+        <a href="https://github.com/kehindeojapa-dev" target="_"
+          >Kehinde's Creative</a
+        >
+      </aside>
+    </section>
   </body>
 </html>

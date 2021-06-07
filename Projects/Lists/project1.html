@@ -3,22 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Resources/hamburger.css" />
+    <link rel="stylesheet" href="../../index.css" />
     <link rel="stylesheet" href="./Style/project.css" />
+    <link
+      rel="shortcut icon"
+      href="../../Resources/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Kehinde Ojapa | Project-Title</title>
   </head>
   <body>
     <!-- Header -->
+    <!-- Header(Navigation) -->
+    <!-- Navigation(small screens) -->
+    <nav class="mobile-nav smallNav">
+      <a href="../../index.html">
+        <img src="../../Resources/images/favicon.ico" />
+      </a>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="../../index.html#aboutText">HOME</a></li>
+                <li><a href="../../index.html#aboutMe">ABOUT</a></li>
+                <li><a href="../../Projects/projectHome.html">PROJECTS</a></li>
+                <li><a href="../../Posts/postHome.html">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Navigation(Bigger Screen) -->
+    <header class="bigNav">
+      <div>
+        <a href="../../index.html">
+          <img src="../../Resources/images/favicon.ico" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../index.html#aboutText">Home</a></li>
+          <li><a href="../../index.html#aboutMe">About</a></li>
+          <li><a href="../../Projects/projectHome.html">Projects</a></li>
+          <li><a href="../../Posts/postHome.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- Title -->
-
+    <h2 class="projectTitle">Project Title</h2>
     <!-- Project main image/video -->
-
+    <section class="visual">
+      <img src="../../Resources/images/myPic2.jpg" alt="project picture" />
+    </section>
     <!-- Tech Stack -->
+    <section class="stack">
+      <p>Ingredients:</p>
+      <ul class="projectTools">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+    </section>
 
+    <section>
+      <div class="buttons btn-top">
+        <button>View Live</button>
+        <button>View Code</button>
+        <button>Details</button>
+      </div>
+    </section>
     <!-- Details -->
 
-    <!-- Buttons -->
+    <p class="details">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur
+      eius quae, expedita nisi, cupiditate placeat itaque vel harum earum
+      tenetur, commodi recusandae repellat inventore. Natus fuga ab id libero
+      quo quasi est praesentium esse ducimus! Fugit unde molestias magnam
+      nesciunt ea maiores, sint, exercitationem nihil deserunt ipsam quia nisi
+      magni adipisci repudiandae nulla. Omnis, ipsa consequuntur explicabo
+      provident excepturi ratione nemo consectetur. Eius laudantium, commodi
+      obcaecati vel, laborum minima ipsum aliquam numquam consequuntur veniam
+      sed error? Repellendus adipisci eum numquam dicta! Nihil vitae iste
+      nostrum sapiente libero ipsa perferendis ullam repellat nobis optio
+      ducimus modi consectetur debitis, veniam temporibus alias non voluptatum
+      cum sed est ad. Recusandae laboriosam cumque itaque mollitia ipsum hic,
+      fuga, inventore quae laudantium aspernatur rerum eius nemo in quibusdam ea
+      dolorum? Odio omnis sunt reiciendis beatae aliquid suscipit numquam iusto
+      praesentium ex? Temporibus voluptatem quisquam perferendis unde voluptatum
+      aut. Quidem tempora provident magnam, modi unde incidunt libero odio cum
+      corrupti, veniam sequi. Laudantium repellendus sint aspernatur hic fugit
+      doloremque accusantium suscipit, vero nam laboriosam? Consectetur nesciunt
+      explicabo accusamus deserunt nobis voluptate veniam eos vel aliquam
+      laboriosam, ullam ad quis dolorem placeat iusto suscipit excepturi!
+      Temporibus ea natus non, ut doloremque nobis blanditiis! Saepe, quia
+      maxime.
+    </p>
 
+    <!-- Buttons -->
+    <div class="buttons btn-bottom">
+      <button>View Live</button>
+      <button>View Code</button>
+      <button>Details</button>
+    </div>
     <!-- Contact Form + Footer -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h1>Get In Touch</h1>
+      <p>
+        Currently looking for remote or in-house opportunites. Have an exciting
+        project that could use my help?, or you've got a question. Drop me a
+        line and let's chat!
+      </p>
+
+      <a class="message" href="mailto:adaeza.dev@gmail.com">
+        Shoot a Message
+      </a>
+
+      <!-- Social + Footer -->
+      <nav id="social">
+        <ul>
+          <li>
+            <a href="#" target="_"
+              ><img src="../../Resources/images/linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/kehindeojapa-dev" target="_">
+              <img src="../../Resources/images/github.png" alt="Github link" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_">
+              <img
+                src="../../Resources/images/twitter.png"
+                alt="Twitter link"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <aside>
+        Designed & Built by
+        <a href="https://github.com/kehindeojapa-dev" target="_"
+          >Kehinde's Creative</a
+        >
+      </aside>
+    </section>
   </body>
 </html>
